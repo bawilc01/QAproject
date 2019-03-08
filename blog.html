@@ -8,7 +8,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" type="text/css" href="css/normalize.css">
     <link rel="stylesheet" type="text/css" href="css/stylesheet.css">
-
+    <script  type="text/javascript" src="jquery-1.12.4.min.js"></script>
 
     <title>QA</title>
   </head>
@@ -19,8 +19,8 @@
           <h1>Quality Assurance</h1>
           <h2>We're not happy until you're not happy</h2>
             <ul id="nav">
-              <li><a href="index.html">Home</a></li>
-              <li><a href="blog.html">QA Blog</a></li>
+              <li><a href="index.html#cnt" >Home</a></li>
+              <li><a href="blog.html#cnt">QA Blog</a></li>
               <li><a href="myqaskills.html">My QA Skills</a></li>
               <li><a href="qaissues.html">QA Issues</a></li>
               <li><a href="follow-me.html">Follow Me</a></li>
@@ -29,27 +29,37 @@
 
 <div id="wrapper"> <!--Wrapper div-->
   <!--Content Section-->
+    <a id='notALink 'name='cnt'/>
     <div id="content">
-        <div id="flashMessage">
-            Your changes have been saved!
-        </div>
-        <div class="blogNewPost">
-            <h1 class="blogPage-title">New Blog Post</h1>
-            <p class="blogTitle-area">
-                <label>Title</label>
-                <input type="text" id="blogTitleInput">
-            </p>
-            <p class="blogContent-area">
-                <label>Content</label>
-                <textarea id="blogContentInput"></textarea>
-            </p>
-            <p>
-                <button id="previewButton">Preview</button>
-            </p>
-        </div>
+        <div class="newBlogPost">
+            <h1 class="blogPageTitle">New Blog Post</h1>
+            <p><label>Title: </label></p>
+            <p><input type="text" id="blogTitleInput"></p>
+            <p><label>Topic: </label></p>
+            <p><textarea id="blogContent"></textarea></p>
+       </div>
+       <p>
+         <button onclick='showPreview(); return false;'>Preview</button>
+       </p>
+       <div class="previewMessage">
+        <p id="previewMessage">
+        </p>
+       </div>
+         <p>
+          <button id='successButton' onclick='showSuccess(); return false;'>Submit</button>
+         </p>
+         <div class="successMessage">
+          <p id="successMessage">
+          </p>
+         </div>
+       </div>
+
+
+
         <div class="blogPreviewArea">
             <h2 id="blogTitlePreview"></h2>
             <div id="blogContentPreview">
+              <p display="#blogContent"></p>
             </div>
         </div>
 
@@ -59,7 +69,8 @@
     <footer id="footer">
       <p>Copyright 2016 | B. C.</p>
     </footer>
-    <script  type="text/javascript" src="javascript.js"></script>
+
+    <script type="text/javascript" src="javascript/javascript.js"></script>
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
   </body>
 </html>

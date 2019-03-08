@@ -23,11 +23,21 @@ a {
     text-transform: uppercase;
  }
 
+ #notALink {
+   text-decoration: none;
+   color: black;
+   text-align: left;
+   text-transform: uppercase;
+}
+
  a:hover, a:focus {
    color: rgb(58, 65, 56);
    background-color: whitesmoke
  }
 
+#notALink:hover, #notALink:focus {
+  color: black;
+}
  /* =================================
   Base Layout Styles
 ==================================== */
@@ -160,5 +170,5 @@ p {
   #content p {
     width: 100%;
     text-align: justify;
-    }
+      }
 }

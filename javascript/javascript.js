@@ -1,4 +1,4 @@
-$('#flashMessage').hide();
+/*$('#flashMessage').hide();
 
 $('#previewButton').click(function() {
   const title = $('#blogTitleInput').val();
@@ -11,15 +11,16 @@ $('#flashMessage')
     .slideDown(1000)
     .delay(2000)
     .slideUp();
-});
+});*/
 
-var ruWord = ['чёрный: black',
-'кори́чневый: brown',
-'фиоле́товый: purple or violet',
-'кра́сный: red',
-'бе́лый: white'];
+const successButton = document.getElementById('successButton').style.display = 'none';
 
-function newRuWord() {
-  var randomRuWord = Math.floor(Math.random() * ruWord.length);
-  document.getElementById('ruWordDisplay').innerHTML = ruWord[randomRuWord];
-};
+function showPreview(){
+  document.getElementById('previewMessage').innerHTML = "Please preview your changes before saving.";
+  document.getElementById('successButton').style.display = 'block';
+}
+
+
+function showSuccess() {
+  document.getElementById('successMessage').innerHTML = "Your changes have been saved!";
+}
