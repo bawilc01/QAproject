@@ -14,55 +14,55 @@
   </head>
   <body>
 
-    <header id="header">
-          <img src="img/test.jpg" id="headerimg"></>
-          <h1>Quality Assurance</h1>
-          <h2>We're not happy until you're not happy</h2>
-            <ul id="nav">
-              <li><a href="index.html#cnt" >Home</a></li>
-              <li><a href="blog.html#cnt">QA Blog</a></li>
-              <li><a href="myqaskills.html">My QA Skills</a></li>
-              <li><a href="qaissues.html">QA Issues</a></li>
-              <li><a href="follow-me.html">Follow Me</a></li>
-            </ul>
-    </header>
+    <div class="logo">
+        <header id="header">
+              <img src="img/test-main.jpg" id="headerimg" class="desktop" />
+  			<img src="img/test2.jpg" id="headerimg" class="mobile" />
+              <h1>Quality Assurance</h1>
+              <h2>We're not happy until you're not happy</h2>
+                <ul id="nav" class="newBlogPost">
+                  <li><a href="index.html#content">Home</a></li>
+                  <li><a href="blog.html#content">QA Blog</a></li>
+                  <li><a href="follow-me.html#content">Follow Me</a></li>
+                </ul>
+        </header>
+  	</div>
 
-<div id="wrapper"> <!--Wrapper div-->
-  <!--Content Section-->
-    <a id='notALink 'name='cnt'/>
-    <div id="content">
-        <div class="newBlogPost">
-            <h1 class="blogPageTitle">New Blog Post</h1>
-            <p><label>Title: </label></p>
-            <p><input type="text" id="blogTitleInput"></p>
-            <p><label>Topic: </label></p>
-            <p><textarea id="blogContent"></textarea></p>
-       </div>
-       <p>
-         <button onclick='showPreview(); return false;'>Preview</button>
-       </p>
-       <div class="previewMessage">
-        <p id="previewMessage">
-        </p>
-       </div>
-         <p>
-          <button id='successButton' onclick='showSuccess(); return false;'>Submit</button>
-         </p>
-         <div class="successMessage">
-          <p id="successMessage">
-          </p>
+    <div id="wrapper"> <!--Wrapper div-->
+
+      <div id="content">
+          <div class="newBlogPost">
+              <h1 class="blogPageTitle">New Blog Post</h1>
+              <p><label>Title: </label></p>
+              <p><input type="text" id="blogTitleInput"></p>
+              <p><label>Topic: </label></p>
+              <p><textarea id="blogContent"></textarea></p>
          </div>
-       </div>
+         <p>
+           <button id="previewButton" onclick='showPreview(); return false;'>Preview</button>
+         </p>
+
+         <div class="previewMessage">
+           <p id="previewMessage"></p>
+
+         </div>
 
 
+           <p>
+            <button id='successButton' onclick='showSuccess(); return false;'>Submit</button>
+           </p>
 
-        <div class="blogPreviewArea">
-            <h2 id="blogTitlePreview"></h2>
-            <div id="blogContentPreview">
-              <p display="#blogContent"></p>
-            </div>
-        </div>
+           <div class="successMessage">
+             <p id="successMessage"></p>
 
+           </div>
+           <div class="newBlogPost">
+              <p>Test Title</p>
+              <p>Test Topic</p>
+           </div>
+         </div>
+
+        </div> <!--end of buttons div-->
       </div> <!--end of content div-->
     </div> <!--end of wrapper div-->
 
