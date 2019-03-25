@@ -6,50 +6,61 @@
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="css/normalize.css">
     <link rel="stylesheet" type="text/css" href="css/stylesheet.css">
-
-
+    <script  type="text/javascript" src="jquery-1.12.4.min.js"></script>
     <title>QA</title>
   </head>
   <body>
 
-	<div class="logo">
-      <header id="header">
-            <!--desktop header image-->
+    <div class="logo">
+        <header id="header">
             <img src="img/test-main.jpg" id="headerimg" class="desktop" />
-            <!--desktop mobile image-->
-			      <img src="img/test2.jpg" id="headerimg" class="mobile"/>
-            
+            <img src="img/test2.jpg" id="headerimg" class="mobile" />
+
+                  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                  <a class="navbar-brand">QuA-lity Blog</a>
+                  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+
+                  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav mr-auto">
+                      <li class="nav-item active">
+                        <a class="nav-link" href="index.html#content">Home <span class="sr-only">(current)</span></a>
+                      </li>
+                      <li class="nav-item active">
+                        <a class="nav-link" href="blog.html#content">QA Blog<span class="sr-only">(current)</span></a>
+                      </li>
+                    </ul>
+                  </div>
+                </nav>
             <h1>Quality Assurance</h1>
             <h2>We're not happy until you're not happy</h2>
-              <ul id="nav">
-                <li><a href="index.html#content">Home</a></li>
-                <li><a href="blog.html#content">QA Blog</a></li>
-                <li><a href="follow-me.html#content">Follow Me</a></li>
-              </ul>
-      </header>
-	</div>
+        </header>
+    </div> <!--end of logo div-->
 
-<div id="wrapper">
-   <!--Wrapper div-->
+    <div id="wrapper">
 
-        <div id="content">
-          <h1>Blog Posts</h1>
+        <h1 class="blogPageTitle">The Second Blog Post</h1>
 
-          <p> display blog post here </p>
+        <p id="mainPost"> Where the most recent QA Blog Post would Go upon clicking submit if there were a backend to put it here. </p>
 
-        </div>
+        <h1 class="blogPageTitle">The First Blog Post</h1>
 
+        <p id="mainPost"> Where the first QA Blog Posts would Go upon clicking submit if there were a backend to put it here. </p>
 
-      </div> <!--End of Wrapper div-->
+    </div> <!--End of Wrapper div-->
 
 <!--Footer Section-->
       <footer id="footer">
           <p>Copyright 2016 | B. C.</p>
       </footer>
-      <script  type="text/javascript" src="jquery.js"></script>
-      <script  type="text/javascript" src="javascript.js"></script>
+
       <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+      <script type="text/javascript" src="javascript/javascript.js"></script>
   </body>
 </html>

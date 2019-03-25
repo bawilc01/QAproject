@@ -126,6 +126,7 @@ a {
   line-height: 1.3;
   margin-top: 0;
   padding: 3px;
+  width: 100%;
 }
 
 #content h1,
@@ -140,13 +141,82 @@ p {
 
 }
 
-#newBlogPost {
-  width: 33.33%
-  margin: 0;
-  float: right;
-  display: inline-block;
+
+.one {
+  float: left;
+  margin-top: 5%;
+  margin-left: 20%;
+  padding: 20px;
+  width: 20%;
+  }
+
+  .two {
+    float: right;
+    text-align: left;
+    margin-right: 20%;
+    margin-top: 5%;
+    padding: 20px;
+    width: 20%;
+  }
+
+
+.two p {
+    text-align: left;
+  }
+
+.input {
+  width: 100%;
+  padding: 3%;
+  margin-bottom: 3%;
 }
 
+#blogContent {
+  padding-bottom: 10px;
+}
+
+#previewButton {
+  padding: 3%;
+  width: 100%;
+}
+
+#successButton {
+  padding: 3%;
+  width: 100%;
+}
+
+#refreshButton {
+  padding: 3%;
+  width: 100%;
+}
+
+#previewMessage {
+  paddiing: 3%;
+  margin-top: 3%;
+  text-align: left;
+}
+
+
+/*Blog Preview*/
+
+#blogTitlePreview2 {
+  text-transform: capitalize;
+  text-align: left;
+  width: 100%;
+  padding: -10%;
+  margin-bottom: 5%;
+}
+
+#blogContentPreview2 {
+  text-align: left;
+  display: flex;
+  width: 100%;
+  padding: -10%;
+}
+
+#blogTitlePreview2,
+#blogContentPreview2 {
+  word-wrap: break-word;
+}
 
 /*Footer Styling*/
 
@@ -165,7 +235,7 @@ p {
 
 /*Media Queries*/
 
-@media (max-width: 960px) {
+@media (max-width: 1200px) {
 
 
   #header {
@@ -189,6 +259,7 @@ p {
     line-height: 1.3;
     font-size: 50px;
 	  margin-left: 10px;
+    font-weight: 400;
   }
 
   #header h2 {
@@ -197,33 +268,45 @@ p {
    line-height: 1.3;
    font-size: 24px;
    margin-left: 10px;
-
+   font-weight: 400;
   }
 
-  #nav {
+.one,
+.two {
+  display: block;
+  float: none;
+  width: 100%;
+  margin: 0 auto;
+  }
+
+.blogPageTitle {
+    text-align: center;
+  }
+
+#previewMessage, #successMessage, #mainPost {
+    display: block;
     float: none;
-    display: block;
+    width: 100%;
+    padding: 3%;
+    text-align: center;
     margin: 0 auto;
-	  width: 80%;
-	  margin-left: 30px;
-	}
-
-  #nav li {
-    display: block;
-    text-align: center;
-    border-radius: 0;
-    line-height: 1.3;
-	  width: 100%;
   }
 
-   #content h1 {
-    width: 100%;
-    text-align: center;
-	  float: none;
-  }
-  #content {
-    width: 100%;
-    text-align: justify;
-	  float: none;
+#blogTitlePreview2,
+#blogContentPreview2 {
+  display: block;
+  float: none;
+  width: 100%;
+  padding: 3%;
+  text-align: center;
+  margin: 0 auto;
+}
+
+
+#previewButton,
+#successButton,
+#refreshButton {
+  width: 100%;
+  padding: 3%;
   }
 }

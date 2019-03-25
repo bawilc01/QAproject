@@ -6,6 +6,7 @@
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="css/normalize.css">
     <link rel="stylesheet" type="text/css" href="css/stylesheet.css">
     <script  type="text/javascript" src="jquery-1.12.4.min.js"></script>
@@ -14,63 +15,68 @@
   </head>
   <body>
 
-    <div class="logo">
-        <header id="header">
-              <img src="img/test-main.jpg" id="headerimg" class="desktop" />
-  			<img src="img/test2.jpg" id="headerimg" class="mobile" />
-              <h1>Quality Assurance</h1>
-              <h2>We're not happy until you're not happy</h2>
-                <ul id="nav" class="newBlogPost">
-                  <li><a href="index.html#content">Home</a></li>
-                  <li><a href="blog.html#content">QA Blog</a></li>
-                  <li><a href="follow-me.html#content">Follow Me</a></li>
-                </ul>
-        </header>
-  	</div>
+          <div class="logo">
+              <header id="header">
+                  <img src="img/test-main.jpg" id="headerimg" class="desktop" />
+      			      <img src="img/test2.jpg" id="headerimg" class="mobile" />
 
-    <div id="wrapper"> <!--Wrapper div-->
+                        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                        <a class="navbar-brand" href="#">QuA-lity Blog</a>
+                        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                          <span class="navbar-toggler-icon"></span>
+                        </button>
 
-      <div id="content">
-          <div class="newBlogPost">
-              <h1 class="blogPageTitle">New Blog Post</h1>
-              <p><label>Title: </label></p>
-              <p><input type="text" id="blogTitleInput"></p>
-              <p><label>Topic: </label></p>
-              <p><textarea id="blogContent"></textarea></p>
-         </div>
-         <p>
-           <button id="previewButton" onclick='showPreview(); return false;'>Preview</button>
-         </p>
+                        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                          <ul class="navbar-nav mr-auto">
+                            <li class="nav-item active">
+                              <a class="nav-link" href="index.html#content">Home <span class="sr-only">(current)</span></a>
+                            </li>
+                            <li class="nav-item active">
+                              <a class="nav-link" href="blog.html#content">QA Blog</a>
+                            </li>
+                          </ul>
+                        </div>
+                      </nav>
+                  <h1>Quality Assurance</h1>
+                  <h2>We're not happy until you're not happy</h2>
+              </header>
+        	</div> <!--end of logo div-->
 
-         <div class="previewMessage">
-           <p id="previewMessage"></p>
+          <div id="wrapper"> <!--Wrapper div-->
 
-         </div>
+              <div class="one">
+                <h1 class="blogPageTitle">New Blog Post</h1>
+                <p><label>Title: </label></p>
+                <p><input type="text" id="blogTitleInput" class="input"></p>
+                <p><label>Topic: </label></p>
+                <p><textarea id="blogContent" class="input"></textarea></p>
 
+                <div class="previewMessage">
+                  <button id="previewButton" onclick='showPreview(); return false;'>Preview</button>
+                  <p id="previewMessage"></p>
+                  <button id='successButton' onclick='showSuccess(); return false;'>Submit</button>
+                  <div class="successMessage">
+                    <p id="successMessage"></p>
+                  </div>
+                  <button id="refreshButton" value="Refresh Page" onClick="window.location.reload()">Refresh</button>
+                </div>
+              </div>
 
-           <p>
-            <button id='successButton' onclick='showSuccess(); return false;'>Submit</button>
-           </p>
+              <div class="two">
+                <h1 class="blogPageTitle">Blog Preview</h1>
+                <h3 id="blogTitlePreview2"></h2>
+                <div id="blogContentPreview2"></div>
+              </div>
 
-           <div class="successMessage">
-             <p id="successMessage"></p>
-
-           </div>
-           <div class="newBlogPost">
-              <p>Test Title</p>
-              <p>Test Topic</p>
-           </div>
-         </div>
-
-        </div> <!--end of buttons div-->
-      </div> <!--end of content div-->
     </div> <!--end of wrapper div-->
 
     <footer id="footer">
       <p>Copyright 2016 | B. C.</p>
     </footer>
 
-    <script type="text/javascript" src="javascript/javascript.js"></script>
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="javascript/javascript.js"></script>
   </body>
 </html>
