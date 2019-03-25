@@ -14,7 +14,7 @@
     <title>QA</title>
   </head>
   <body>
-
+    <!--header and menu start; logo div beginning-->
           <div class="logo">
               <header id="header">
                   <img src="img/test-main.jpg" id="headerimg" class="desktop" />
@@ -42,41 +42,47 @@
               </header>
         	</div> <!--end of logo div-->
 
-          <div id="wrapper"> <!--Wrapper div-->
+           <!--Wrapper div starts-->
+          <div id="wrapper">
 
-              <div class="one">
-                <h1 class="blogPageTitle">New Blog Post</h1>
-                <p><label>Title: </label></p>
-                <p><input type="text" id="blogTitleInput" class="input"></p>
-                <p><label>Topic: </label></p>
-                <p><textarea id="blogContent" class="input"></textarea></p>
+              <!--blog title and topic entry start; hidden buttons start-->
+                <div class="one">
+                  <h1 class="blogPageTitle">New Blog Post</h1>
+                  <p><label>Title: </label></p>
+                  <p><input type="text" id="blogTitleInput" class="input"></p>
+                  <p><label>Topic: </label></p>
+                  <p><textarea id="blogContent" class="input"></textarea></p>
 
-                <div class="previewMessage">
-                  <button id="previewButton" onclick='showPreview(); return false;'>Preview</button>
-                  <p id="previewMessage"></p>
-                  <button id='successButton' onclick='showSuccess(); return false;'>Submit</button>
-                  <div class="successMessage">
-                    <p id="successMessage"></p>
+                  <div class="previewMessage">
+                    <button id="previewButton" onclick='showPreview(); return false;'>Preview</button>
+                    <p id="previewMessage"></p>
+                    <button id='successButton' onclick='showSuccess(); return false;'>Submit</button>
+                    <div class="successMessage">
+                      <p id="successMessage"></p>
+                    </div>
+                    <button id="refreshButton" value="Refresh Page" onClick="window.location.reload()">Refresh</button>
                   </div>
-                  <button id="refreshButton" value="Refresh Page" onClick="window.location.reload()">Refresh</button>
-                </div>
-              </div>
+                </div> <!--blog title and topic entry ends; hidden buttons ends-->
 
-              <div class="two">
-                <h1 class="blogPageTitle">Blog Preview</h1>
-                <h3 id="blogTitlePreview2"></h2>
-                <div id="blogContentPreview2"></div>
-              </div>
+                <!--blog preview area start-->
+                <div class="two">
+                  <h1 class="blogPageTitle">Blog Preview</h1>
+                  <h3 id="blogTitlePreview2"></h2>
+                  <div id="blogContentPreview2"></div>
+                </div> <!--blog preview area ends-->
 
-    </div> <!--end of wrapper div-->
+            </div> <!--end of wrapper div-->
 
-    <footer id="footer">
-      <p>Copyright 2016 | B. C.</p>
-    </footer>
 
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-    <script type="text/javascript" src="javascript/javascript.js"></script>
+          <!--footer starts-->
+          <footer id="footer">
+            <p>Copyright 2016 | B. C.</p>
+          </footer>   <!--footer ends-->
+
+          <!--javascript/jquery/bootstrap links starts-->
+          <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+          <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+          <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+          <script type="text/javascript" src="javascript/javascript.js"></script>
   </body>
 </html>
