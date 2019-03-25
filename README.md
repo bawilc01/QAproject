@@ -19,3 +19,5 @@ a. Change your text and click Preview again, or...
 b. Click Submit to "submit" your blog for "publishing."
 
 5. Click "Refresh" to refresh the page and enter another blog post preview.
+
+Github Pages link: https://bawilc01.github.io/QAproject/
