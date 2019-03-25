@@ -8,14 +8,14 @@ The QA Blog post would be for me only, if there were a back end with user roles 
 
 QA Blog Page: Steps to see a Blog Preview:
 
-1) Enter a title for your blog post.
+1. Enter a title for your blog post.
 
-2) Enter some text for your post.
+2. Enter some text for your post.
 
-3) Click the Preview button to see a preview of your post before "publishing." There should be a message saying to preview your work and also, the Submit button is visible.
+3. Click the Preview button to see a preview of your post before "publishing." There should be a message saying to preview your work and also, the Submit button is visible.
 
-4.1) You can change your text and click Preview again, or...
+4. You can: 
+a. Change your text and click Preview again, or...
+b. Click Submit to "submit" your blog for "publishing."
 
-4.2) Click Submit to "submit" your blog for "publishing."
-
-5) Click "Refresh" to refresh the page and enter another blog post preview.
+5. Click "Refresh" to refresh the page and enter another blog post preview.
