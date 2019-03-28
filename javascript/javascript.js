@@ -3,7 +3,7 @@ Blog Previewer Functionality
 *****************************/
 
 // Hidden success and refresh buttons on initial page load
-const successButton = document.getElementById('successButton').style.display = 'none';
+const successButton = document.getElementById('successButton').style.display = 'none'; //throws js error in console; trying to style button on index.html page but button is not on that page
 const refreshButton = document.getElementById('refreshButton').style.display = 'none';
 
 // Assigning text typed in title and topic fields into variables named the same
